@@ -1,7 +1,5 @@
-# Fortinet Template Repo for TECWorkshops
+# Fortinet FortiGate Automation Stitch Workshop
 
-## Prereqs
-  - Docker
- 
-## How to use this repo:
-https://fortinetcloudcse.github.io/UserRepo/index.html
+## Documentation
+
+[Fortinet FortiGate Automation Stitch Workshop](https://fortinetcloudcse.github.io/fortigate-automation-stitch-workshop/index.html)
