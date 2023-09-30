@@ -18,6 +18,7 @@ weight: 4
         cd ./technical-recipe-azure-fgt-automation-stitch/terraform/azure
         terraform output
         terraform output credentials
+        
         ````
 
   2. Review the Resource Group and created components.

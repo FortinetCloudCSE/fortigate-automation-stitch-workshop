@@ -1,5 +1,5 @@
 ---
-title: "Task 1 - Create Simple Automation Stitch"
+title: "Task 4 - Test the Automation Stitch"
 chapter: true
 weight: 5
 ---

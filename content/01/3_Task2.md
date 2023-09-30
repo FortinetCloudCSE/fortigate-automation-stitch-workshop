@@ -23,6 +23,7 @@ cd ./technical-recipe-azure-fgt-automation-stitch/terraform/azure
 terraform init
 terraform plan -var="username=$env:USER"
 terraform apply -var="username=$env:USER" -auto-approve
+
 ```
 
   ![terraform1](../images/terraform-01.jpg)
