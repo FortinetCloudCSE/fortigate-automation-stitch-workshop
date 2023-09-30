@@ -22,7 +22,7 @@ weight: 2
 * __Select__ __PowerShell__
     ![cloudshell6](../images/cloudshell-05.jpg)
 
-* __Click__ on __Show advanced settings__
+* __Click__ on "Show advanced settings"
 
     ![cloudshell7](../images/cloudshell-06.jpg)
 * __Select__

@@ -109,7 +109,7 @@ locals {
       offer     = "fortinet_fortigate-vm_v5"
       vm_size   = "Standard_DS2_v2"
       version   = "latest"                   # can also be a version, e.g. 6.4.9, 7.0.6, 7.2.0, etc. latest is latest
-      sku       = "fortinet_fg-vm_payg_2022" # can be byol|flex - fortinet_fg-vm2 or payg - "fortinet_fg-vm_payg_2022"
+      sku       = "fortinet_fg-vm_payg_2023" # can be byol|flex - fortinet_fg-vm2 or payg - "fortinet_fg-vm_payg_2022"
     }
     "linux_vm" = {
       publisher = "Canonical"

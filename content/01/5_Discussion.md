@@ -10,9 +10,9 @@ Fortinet provides a large library of infrastructure as code (IaC) templates to d
 
 For more information, review the following:
 
-* [FortiOS 7.2 Admin Guide](https://docs.fortinet.com/document/fortigate/7.2.2/administration-guide/763117/terraform-fortios-as-a-provider)
+* [FortiOS 7.4 Admin Guide](https://docs.fortinet.com/document/fortigate/7.4.1/administration-guide/763117)
 
-* [Terraform Providers](https://fndn.fortinet.net/index.php?/cloud/terraform/)
+* [Terraform Providers](https://registry.terraform.io/providers/fortinetdev/fortios/latest/docs)
 
 * [Ansible Modules](https://galaxy.ansible.com/fortinet)
 
