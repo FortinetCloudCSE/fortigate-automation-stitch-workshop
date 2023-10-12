@@ -28,7 +28,7 @@ weight: 2
 * __Select__
   * __Use existing__ Resource Group  - it ___should___ auto populate with USERXX-fgt-as-workshop (USERXX is your Username)
   * __Use existing__ Storage account - it ___should___ auto populate with USERXX############ (############ is a random string)
-  * __Use existing__ File Share  - type __cloudshellshare__
+  * __Use existing__ File Share  - type `cloudshellshare`
 * __Click__ "Attach Storage"
 
     ![cloudshell8](../images/cloudshell-07.jpg)
