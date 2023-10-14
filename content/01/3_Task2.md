@@ -11,8 +11,8 @@ Perform the following step in your Cloudshell console to create your environment
 1. Clone the Github repo `https://github.com/FortinetCloudCSE/fortigate-automation-stitch-workshop`
 1. Change directory to the `fortigate-automation-stitch-workshop/terraform/azure` folder
 1. Run `terraform init`
-1. Run `terraform plan` for your `username`
-1. Run `terraform apply` for your `username`
+1. Run `terraform plan -var="username=$env:USER`
+1. Run `terraform apply -var="username=$env:USER`
 
 > **Copy and paste these commands into your Cloud Shell console.**
 > The terraform variable `username` will be populated with the value of the environment variable `USER`

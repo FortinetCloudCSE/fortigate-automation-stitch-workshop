@@ -8,13 +8,15 @@ weight: 3
 
 A FortiGate Automation Stitch brings together a Trigger and one of more Actions.
 
-FortiGate Automation Stitch Triggers are grouped in Security Fabric, System, Event Log, and Miscellaneous categories. The Miscellaneous category includes
+FortiGate Automation Stitch Triggers are grouped in categories. The Miscellaneous category includes
 
 * FortiOS Event Log
 * Incoming Webhook
 * Schedule
 
-The FortiGate Automation Stitch will be triggered by a log entries related to Dynamic addresses. When a Dynamic address is updated by adding or removing an IP address, the FortiGate Automation Stitch will be triggered. The Dynamic addresses setup previously are updated when a VM with a specific tag and value is discovered or when a previously discovered VM with a specific tag and value is no longer seen in the Azure environment.
+The FortiGate Automation Stitch will be triggered by a log entries related to Dynamic addresses. When a Dynamic address is updated by adding or removing an IP address, the FortiGate Automation Stitch will be triggered.
+
+The Dynamic addresses setup in the previous step are updated when a VM with a specific tag and value is discovered or when a previously discovered VM with a specific tag and value no longer exists in the Azure environment.
 
 * Tag: ComputeType Value: AppServer - updates the AppServers address
 * Tag: ComputeType Value: DbServer - updates the DbServers address

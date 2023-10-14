@@ -19,8 +19,8 @@ To summarize there are two Webhooks;
 
 The data sent by the FortiGate Webhook action is sent (POSTed) to the Azure Automation Runbook **Update-RouteTable** where it is parsed and acted upon based on the sent data. Possible runbook actions are
 
-* **Update** the Azure Route table **rt-protected** in the Resource Group USERXX-fgt-as-workshop by adding a host route
-* **Update** the Azure Route table **rt-protected** in the Resource Group USERXX-fgt-as-workshop by removing a host route
+* **Update** the Azure Route table **rt-protected** in the Resource Group USERXX-fgt-as-workshop by **adding** a host route
+* **Update** the Azure Route table **rt-protected** in the Resource Group USERXX-fgt-as-workshop by **removing** a host route
 * **Return** an error message indication that the passed data was incorrect or that the runbook was not executed via the Webhook
 
 The FortiGate Automation Stitch action is triggered by a log entry related to Dynamic addresses, when a Dynamic address is updated by adding or removing an IP address. The Dynamic addresses setup previously are updated when a VM with a specific tag and value is discovered or if a previously discovered VM with a specific tag and value is no longer seen in the Azure environment.

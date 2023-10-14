@@ -6,9 +6,9 @@ weight: 2
 
 ## Fortinet FortiGate Automation Stitch Workshop
 
-### Chapter 2 - Azure Automation (15min)
+### Chapter 2 - Azure Automation Overview (15min)
 
-Tasks
+### Tasks
 
 * Review Azure Automation Account
 * View Azure Automation Runbook

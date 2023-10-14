@@ -6,15 +6,15 @@ weight: 4
 
 ### Task 3 - Create Automation Stitch
 
-This task creates the stitch that connects the trigger and the action(s).
+This task creates the stitch for when an Admin logs in or out or fails to login.
 
-1. **Click** "Action"
+1. **Click** "Stitch"
 1. **Click** "Create New"
 
   ![stitchtask3](../images/stitch_task3-01.jpg)
 
 1. **Enter**
-    * Name: "Admin activity stitch"
+    * Name: `Admin activity stitch`
 1. **Click** "Add Trigger"
 1. **Click** "Admin activity trigger" in "Select Entries"
 1. **Click** "Apply"

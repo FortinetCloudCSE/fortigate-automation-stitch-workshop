@@ -10,7 +10,7 @@ weight: 2
 
 ![routetable1](../images/verify_routetable-01.jpg)
 
-There is already a host route for vm-linux-2 10.1.2.5/32 with a next hop IP 10.1.1.4, FortiGate port2. This route is here because of the FortiGate Automation Stitch and when vm-linux-2 was deployed it was tagged with "ComputeType=WebServer".
+There may already be a host route for vm-linux-2 10.1.2.5/32 with a next hop IP 10.1.1.4, FortiGate port2. This route may be here because of the FortiGate Automation Stitch and when vm-linux-2 was deployed it was tagged with "ComputeType=WebServer".
 
 The other VM vm-linux-1 has the tag "ComputeType" but the tag value is set to "unknown". The FortiGate Azure SDN Connector does collect this VM's information each time a scan of the Azure environment is done, however, the Tag and Value do not match any Dynamic address. A FortiGate Automation Stitch is **not** triggered.
 

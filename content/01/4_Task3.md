@@ -6,7 +6,7 @@ weight: 4
 
 ### Task 3 - Terraform Verification
 
-  1. Using the Terraform output, verify that you have Web access to the FortiGate.
+  1. __Access__ the FortiGate, using the Terraform output.
 
       ![terraform3](../images/terraform-03.jpg)
 
@@ -21,7 +21,7 @@ weight: 4
 
       ```
 
-  2. Review the Resource Group and created components.
+  2. __Review__ the Resource Group and created components.
 
       * 1 - Automation Account
       * 4 - Disks for the VMs
@@ -31,18 +31,26 @@ weight: 4
       * 1 - Route table
       * 1 - Runbook
       * 1 - Storage account
-      * 3 - Virtual Machines - 1 FortiGate, 2 Linux VMs
-      * 1 - Virtual Network - Containing 3 Subnets - snet-internal, snet-external, snet-protected
+      * 3 - Virtual Machines
+        * 1 - FortiGate
+        * 2 - Linux VMs
+      * 1 - Virtual Network - Containing 3 Subnets
+        * snet-external
+        * snet-internal
+        * snet-protected
 
       ***
 
       1. __Minimize__ the Cloudshell console window
-      1. __Click__ the slide-drawer menu icon (sometimes referred to as the hamburger menu )
+      1. __Click__ the slide-drawer menu icon (AKA the hamburger menu)
       1. __Click__ Home
       1. __Click__ Resource Groups
-      1. __Click__ your Resource Group `USERXX-fgt-as-workshop`
+      1. __Click__ your Resource Group **USERXX-fgt-as-workshop**
 
       ![resourcegroup1](../images/resourcegroup-01.jpg)
       ![resourcegroup2](../images/resourcegroup-02.jpg)
       ![resourcegroup3](../images/resourcegroup-03.jpg)
+
+  3. __Verify__ your Resources
+
       ![resourcegroup4](../images/resourcegroup-04.jpg)

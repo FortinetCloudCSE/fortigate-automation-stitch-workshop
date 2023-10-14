@@ -12,6 +12,6 @@ output "credentials" {
 }
 
 output "webhook" {
-  value     = azurerm_automation_webhook.automation_webhook["Update-RouteTable_webhook"].uri
+  value     = replace(azurerm_automation_webhook.automation_webhook["Update-RouteTable_webhook"].uri, "https://", "")
   sensitive = true
 }
