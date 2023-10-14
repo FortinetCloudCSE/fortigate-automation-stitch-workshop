@@ -21,5 +21,5 @@ The output of the sniffer command shows:
 
 Two things to realize from this output
 
-* vm-linux-2 (10.1.2.5) **can send traffic directly** to vm-linux-1 (10.1.2.4) because they are in the same subnet and there is **no host route** for vm-linux-1 in the rt-protected Route table because it **vm-linux-1 is not tagged as a WebServer**
+* vm-linux-2 (10.1.2.5) **can send traffic directly** to vm-linux-1 (10.1.2.4) because they are in the same subnet and there is **no host route** for vm-linux-1 in the rt-protected Route table because **vm-linux-1 is not tagged as a WebServer**
 * vm-linux-1 (10.1.2.4) **can only communicate** with vm-linux-2 (10.1.2.5) **through the FortiGate** however, the **traffic is dropped** by policy because vm-linux-1 (10.1.2.4) is not in the WebServers Dynamic address.

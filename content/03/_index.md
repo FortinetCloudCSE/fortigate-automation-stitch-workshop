@@ -8,9 +8,9 @@ weight: 3
 
 ### Chapter 3 - FortiGate Simple Automation Stitch (10min)
 
-A FortiGate Automation Stitch brings together a Trigger and one of more Actions.
+A FortiGate Automation Stitch combines a Trigger and one or more Actions.
 
-Tasks
+### Tasks
 
 * Create a Simple Automation Stitch - Email when an Admin user logs in, out or fails login.
   * Create an Automation Trigger

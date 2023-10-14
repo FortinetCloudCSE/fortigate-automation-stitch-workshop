@@ -7,15 +7,15 @@ weight: 4
 ### Task 3 -  Tag the Linux VM vm-linux-1 as a WebServer
 
 1. **Navigate** to the VM vm-linux-1
-1. **Click** the "edit" link nest to Tags
+1. **Click** the "edit" link next to Tags
 1. **Change** the "ComputeType" value to "WebServer"
 1. **Click** "Save"
 
-![sniffping1](../images/verify_sniffping-01.jpg)
+![sniffping1](../images/verify_routetable-01.jpg)
 
 Now that the VM vm-linux-1 has a tag **ComputeType** with a value of **WebServer** several actions take place
 
-* FortiGate Azure SDN Connector will return the updated information to the FortiGate
+* FortiGate Azure SDN Connector will return the updated environment information to the FortiGate
 * FortiGate Dynamic address "WebServers" will be updated with IP address 10.1.2.4
 * FortiGate event log will trigger the FortiGate Automation Stitch to send a Webhook to Azure
 * Azure Automation will send the FortiGate Webhook data to the Azure Automation Runbook
@@ -26,7 +26,7 @@ These actions **take 2-4 minutes to complete**. The FortiGate Azure SDN Connecto
 
 Updated Route table - there is a host route for both linux VMs, all traffic for these VMs must go through the FortiGate and match a policy
 
-![routetable2](../images/verify_routetable-02.jpg)
+![routetable2](../images/update_tag-01.jpg)
 
 FortiGate Sniffer - there is bidirectional traffic for the pings
 

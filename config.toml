@@ -87,7 +87,7 @@ enableEmoji = true
   #logoBannerText="Custom Logo Banner"
 
   # Optional: If you'd like additional logo sub text/descriptions, use logoBannerSubText Parameter.  leave empty string to omit: ""
-  logoBannerSubText="sample sub-banner text"
+  logoBannerSubText="Cloud Security Automation"
 
 
   # Prefix URL to edit current page. Will display an "Edit this page" button on top right hand corner of every page. 
@@ -97,7 +97,7 @@ enableEmoji = true
   # Author of the site, will be used in meta information
   author = "John McDonough"
   # Description of the site, will be used in meta information
-  description = "Hugo for Fortinet TEC Workshops"
+  description = "Fortinet TEC Workshops"
   # Shows a check mark for visited pages on the menu
   showVisitedLinks = true
   # Disable search function. It will hide search bar

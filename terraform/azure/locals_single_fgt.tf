@@ -2,7 +2,7 @@ locals {
   resource_group_exists        = true
   resource_group_name_combined = "${local.username}-${var.resource_group_name_suffix}"
 
-  location = "eastus"
+  location = "centralus"
 
   resource_group_name     = local.resource_group_exists ? data.azurerm_resource_group.resource_group.0.name : azurerm_resource_group.resource_group.0.name
   resource_group_location = local.resource_group_exists ? data.azurerm_resource_group.resource_group.0.location : azurerm_resource_group.resource_group.0.location
@@ -35,7 +35,7 @@ locals {
       log_progress            = "true"
       runbook_type            = "PowerShell"
 
-      publish_content_link_uri = "https://raw.githubusercontent.com/FortinetSecDevOps/technical-recipe-azure-fgt-automation-stitch/main/PowerShell/Update-RouteTable.ps1"
+      publish_content_link_uri = "https://raw.githubusercontent.com/FortinetCloudCSE/fortigate-automation-stitch-workshop/main/PowerShell/Update-RouteTable.ps1"
     }
   }
 
@@ -107,14 +107,14 @@ locals {
     "fortigate" = {
       publisher = "fortinet"
       offer     = "fortinet_fortigate-vm_v5"
-      vm_size   = "Standard_DS2_v2"
+      vm_size   = "Standard_Ds4_v2"
       version   = "latest"                   # can also be a version, e.g. 6.4.9, 7.0.6, 7.2.0, etc. latest is latest
       sku       = "fortinet_fg-vm_payg_2023" # can be byol|flex - fortinet_fg-vm2 or payg - "fortinet_fg-vm_payg_2022"
     }
     "linux_vm" = {
       publisher = "Canonical"
       offer     = "UbuntuServer"
-      vm_size   = "Standard_F2"
+      vm_size   = "Standard_Fs2"
       version   = "latest"
       sku       = "16.04-LTS"
     }
