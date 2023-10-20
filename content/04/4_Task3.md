@@ -41,6 +41,8 @@ The triggers setup in the last task can all utilize the same action.
 
   * Use the contents of the file `terraform/fortios/fortigate_automation_action_cli.cfg` - this file was created for this specific deployment when the initial **terraform apply** was executed.
 
+> The webhook URI contains a question mark (?) between the words **webhooks** and **token**. When pasting text into the FortiGate CLI question marks are removed, due to the question mark having special meaning in the FortiGate CLI.
+
     ```bash
     config system automation-action
         edit "routetableupdate"
@@ -102,3 +104,8 @@ The triggers setup in the last task can all utilize the same action.
   * **RouteTableName** - the name of the Azure Route table to update
   * **RouteNamePrefix** - a prefix for the routes managed by the Azure Automation Runbook
   * **NextHopIp** - the Next Hop IP Address for the routes managed by the Azure Automation Runbook
+
+    * **Ensure** that a question mark (?) is placed between the words **webhooks** and **token**
+    * **Add** a question mark is not present
+    * **Click** "OK" to save the update
+      ![complexstitchtask3-3](../images/complex_stitch_task3-04.jpg)

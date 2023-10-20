@@ -21,14 +21,18 @@ weight: 2
 * __Click__ on "Show advanced settings"
 
     ![cloudshell7](../images/cloudshell-06.jpg)
+
+> The field *Storage Account* should auto populate. If it does not, it is because the "Cloud Shell Region" field is not set to the Region where the *Storage Account* is located. Please try __Central US__, __East US__, and __West US__
+
 * __Select__
   * __Use existing__ Resource Group
-    * Field ___should___ auto populate with USERXX-fgt-as-workshop (USERXX is your Username)
+    * Field __should__ auto populate with USERXX-fgt-as-workshop (USERXX is your Username)
 
   * __Use existing__ Storage account
-    * Field ___should___ auto populate with USERXX############ (############ is a random string
+    * Field __should__ auto populate with USERXX############ (############) is a random string
 
   * __Use existing__ File Share
+    * This field __will not__ auto populate
     * type `cloudshellshare`
 
 * __Click__ "Attach Storage"
