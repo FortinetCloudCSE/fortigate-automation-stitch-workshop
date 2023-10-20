@@ -23,10 +23,11 @@ Ensuring that VM to VM data traffic in the same subnet is routed via the FortiGa
 ## Tasks
 
 * Create a Complex Automation Stitch - Update an Azure Route table to micro-segment VMs in the same subnet, using host routes
-* Utilize FortiGate Azure SDN Connector
+* Create a FortiGate Azure SDN Connector in disabled mode
 * Utilize FortiGate Dynamic Address Objects in FortiGate Policy
 * Utilize FortiGate Log entries as an Automation Stitch trigger
 * Utilize FortiGate Automation Stitch to trigger an Azure Automation Runbook
+* Enable the FortiGate Azure SDN Connector
 * Check that the Automation Stitch is working
 
 ## Note

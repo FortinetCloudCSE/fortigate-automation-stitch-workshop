@@ -8,7 +8,9 @@ weight: 1
 
 ### Tasks
 
-* Provision Azure Environment - **In an instructor led event, for example XPERTs this step may not be required.**
+{{< notice warning >}} In an instructor led event, for example XPERTs 23 this step may not be required {{< /notice >}}
+
+* Provision Azure Environment
 * Setup Azure Cloud Shell
 * Run Terraform
 * Verify Terraform
