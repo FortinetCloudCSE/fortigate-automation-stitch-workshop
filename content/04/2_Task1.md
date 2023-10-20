@@ -26,6 +26,7 @@ The configurations are presented as a combination of FortiGate CLI commands and 
     config system sdn-connector
         edit "AzureSDN"
             set type azure
+            set status disable 
         next
     end
     ```
@@ -33,39 +34,7 @@ The configurations are presented as a combination of FortiGate CLI commands and 
     ![sdnconnector1](../images/sdnconnector-01.jpg)
     ![sdnconnector2](../images/sdnconnector-02.jpg)
 
-#### View the Created Azure SDN Connector
-
-1. **Minimize** "CLI Console"
-1. **Click** "Security Fabric"
-1. **Click** "External Connectors"
-1. **Hover** over "AzureSDN" <-- The SDN Connector may have already discovered Azure Environment objects, if follow the next steps to view them.
-    * **Click** "View Connector Objects"
-    * **Scroll** through discovered objects, the ones that the Dynamic addresses will use in the "Tag" group
-    * **Click** "X" to exit the view
-
-1. **Double-Click** "AzureSDN" to view the configuration in the UI
-
-    ![sdnconnector3](../images/sdnconnector-03.jpg)
-    ![sdnconnector4](../images/sdnconnector-04.jpg)
-    ![sdnconnector5](../images/sdnconnector-05.jpg)
-
-Notice that the switch "Use managed identity" is enabled. This allows the FortiGate to issue Azure Resource Manager API calls to read the Azure environment.  The "Resource path" can also be enabled to scope the read requests to a particular "Subscription ID" and "Resource group".
-
-The Azure identity of the FortiGate has already been scoped to the Resource Group when the Contributor Role was assigned to the FortiGate during deployment.
-
-#### View the FortiGate's Azure Assigned Identity Contributor Role and Scope
-
-1. **Login** to Azure Cloud Portal [https://portal.azure.com/](https://portal.azure.com/) with the provided login/password
-1. **Navigate** to your Resource Group "USERXX-fgt-as-workshop"
-1. **Click** "vm-fgt"
-1. **Click** "Identity"
-1. **Click** "Azure role assignments"
-
-The Azure "Contributor" role has been assigned to the FortiGate's associated Azure Identity, with a scope of the Resource Group "USERXX-fgt-as-workshop". This means that any API request issued by the FortiGate Azure SDN Connector has all the privileges of the Contributor role but only on objects that are in the specified Resource Group.
-
-  ![sdnconnector6](../images/sdnconnector-06.jpg)
-  ![sdnconnector7](../images/sdnconnector-07.jpg)
-  ![sdnconnector8](../images/sdnconnector-08.jpg)
+The Azure SDN Connector is set to **disable** for now, it will be set to **enable** in Task 5. The SDN Connector needs to exist for the Dynamic Addresses to refer to it, but at this point in the exercise it needs to remain disabled.
 
 #### Create Dynamic Addresses
 
