@@ -27,15 +27,17 @@ weight: 2
     ```
 
 1. View the configured Policy in the FortiGate UI
+
     * **Minimize** "CLI Console"
     * **Click** "Policy & Objects"
     * **Click** "Firewall Policy"
 
-        ![firewallpolicy1](../images/firewallpolicy-01.jpg)
+    ![firewallpolicy1](../images/firewallpolicy-01.jpg)
 
 1. View **webserver2webserver** configuration in the FortiGate UI
+
     * **Double-Click** the **webserver2webserver** Policy
 
-        ![firewallpolicy2](../images/firewallpolicy-02.jpg)
+    ![firewallpolicy2](../images/firewallpolicy-02.jpg)
 
 Notice that the Dynamic address **WebServers** is used as both the source and destination.

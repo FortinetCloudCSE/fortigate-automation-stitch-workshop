@@ -76,12 +76,13 @@ The Azure SDN Connector is set to **disable** for now, it will be set to **enabl
     ```
 
 1. View the configured Addresses in the FortiGate UI
+
     * **Minimize** "CLI Console"
     * **Click** "Policy & Objects"
     * **Click** "Addresses"
 
-      ![dynamicaddress1](../images/dynamicaddress-01.jpg)
-      ![dynamicaddress2](../images/dynamicaddress-02.jpg)
+    ![dynamicaddress1](../images/dynamicaddress-01.jpg)
+    ![dynamicaddress2](../images/dynamicaddress-02.jpg)
 
 As part of the environment deployment by Terraform:
 
@@ -93,10 +94,12 @@ As part of the environment deployment by Terraform:
 The red exclamation point near an address name indicates that the filter(s) for the address did not match anything.
 
 1. View the Matched addresses in the FortiGate UI
+
     * **Hover** over the address name **WebServers**
     * **Click** the "View Matched Addresses" button
 
 1. View an Address configuration in the FortiGate UI
+
     * **Double-Click** the **WebServers** Address
 
-      ![dynamicaddress3](../images/dynamicaddress-03.jpg)
+    ![dynamicaddress3](../images/dynamicaddress-03.jpg)

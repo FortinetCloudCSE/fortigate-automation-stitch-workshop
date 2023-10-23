@@ -35,11 +35,15 @@ The triggers setup in the last task can all utilize the same action.
 1. **Enter** the following CLI commands to create an Automation Stitch Action that will send a Webhook to Azure
 
 * There are two options to create the action
-  * Replace the values indicated below with the information specific to your deployment. The values can be obtained by running the following terraform commands in the `terraform/azure` directory - **Refer to Chapter 1 Task 2 - Run Terraform**
-    * **YOUR_RESOURCE_GROUP** - `terraform output`
-    * **YOUR_WEBHOOK** - `terraform output webhook`
+  1. Replace the values indicated below with the information specific to your deployment. The values can be obtained by running the following terraform commands in the `terraform/azure` directory - **Refer to Chapter 1 Task 2 - Run Terraform**
 
-  * Use the contents of the file `terraform/fortios/fortigate_automation_action_cli.cfg` - this file was created for this specific deployment when the initial **terraform apply** was executed.
+      * **YOUR_RESOURCE_GROUP** - `terraform output`
+      * **YOUR_WEBHOOK** - `terraform output webhook`
+
+  2. Use the contents of the generated FortiOS configuration file
+
+      * `terraform/fortios/fortigate_automation_action_cli.cfg`
+      * This file was created for this specific deployment when the initial **terraform apply** was executed.
 
 > The webhook URI contains a question mark (?) between the words **webhooks** and **token**. When pasting text into the FortiGate CLI question marks are removed, due to the question mark having special meaning in the FortiGate CLI.
 
@@ -78,17 +82,18 @@ The triggers setup in the last task can all utilize the same action.
     ![complexstitchtask3-1](../images/complex_stitch_task3-01.jpg)
 
 1. View the configured Action in the FortiGate UI
+
     * **Minimize** "CLI Console"
     * **Click** "Security Fabric"
     * **Click** "Automation"
     * **Click** the "Action" tab
 
-      ![complexstitchtask3-2](../images/complex_stitch_task3-02.jpg)
+    ![complexstitchtask3-2](../images/complex_stitch_task3-02.jpg)
 
 1. View **routetableupdate** configuration in the FortiGate UI
     * **Double-Click** the **routetableupdate** trigger
 
-      ![complexstitchtask3-3](../images/complex_stitch_task3-03.jpg)
+    ![complexstitchtask3-3](../images/complex_stitch_task3-03.jpg)
 
   The Action fields
 
