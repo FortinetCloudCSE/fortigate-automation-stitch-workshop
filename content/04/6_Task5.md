@@ -52,3 +52,35 @@ The Azure "Contributor" role has been assigned to the FortiGate's associated Azu
   ![sdnconnector6](../images/sdnconnector-06.jpg)
   ![sdnconnector7](../images/sdnconnector-07.jpg)
   ![sdnconnector8](../images/sdnconnector-08.jpg)
+
+#### View the FortiGate Dynamic Address Resolution
+
+Now that the Azure SDN Connector has been enabled the **WebServers** Address should populate with a resolved IP address for a VM with the Tag ComputeType and the value Webserver.
+
+1. View the configured Addresses in the FortiGate UI
+
+    * **Click** "Policy & Objects"
+    * **Click** "Addresses"
+
+    ![dynamicaddress1](../images/dynamicaddress-01.jpg)
+    ![dynamicaddress2](../images/dynamicaddress-02.jpg)
+
+As part of the environment deployment by Terraform:
+
+* A linux VM with the name **vm-linux-2** was deployed
+* A tag **ComputeType** with the value **WebServer** was added to the VM
+* The VM data retrieved by the Azure SDN connecter matched the **WebServers** address filter
+* The address object was populated with the IP address of the VM **vm-linux-2**
+
+The red exclamation point near an address name indicates that the filter(s) for the address did not match anything.
+
+1. View the Matched addresses in the FortiGate UI
+
+    * **Hover** over the address name **WebServers**
+    * **Click** the "View Matched Addresses" button
+
+1. View an Address configuration in the FortiGate UI
+
+    * **Double-Click** the **WebServers** Address
+
+    ![dynamicaddress3](../images/dynamicaddress-03.jpg)
