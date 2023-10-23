@@ -22,12 +22,14 @@ weight: 2
     ```
 
 1. View the configured Action in the FortiGate UI
+
     * **Minimize** "CLI Console"
     * **Click** "Network"
 
-        ![staticroute1](../images/staticroute-01.jpg)
+    ![staticroute1](../images/staticroute-01.jpg)
 
 1. View **10.1.2.0/24** static route configuration in the FortiGate UI
+
     * **Double-Click** the **10.1.2.0/24** Policy
 
-        ![staticroute1](../images/staticroute-02.jpg)
+    ![staticroute1](../images/staticroute-02.jpg)

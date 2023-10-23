@@ -66,16 +66,18 @@ Three FortiGate Automation Stitches need to be created, one for each trigger. Al
     ```
 
 1. View the configured Action in the FortiGate UI
-    * **Minimize** "CLI Console"
-    * **Click** "Security Fabric"
-    * **Click** "Automation"
-    * **Click** the "Stitch" tab
 
-        ![complexstitchtask4-1](../images/complex_stitch_task4-01.jpg)
+* **Minimize** "CLI Console"
+* **Click** "Security Fabric"
+* **Click** "Automation"
+* **Click** the "Stitch" tab
+
+    ![complexstitchtask4-1](../images/complex_stitch_task4-01.jpg)
 
 1. View **routetableupdate-WebServers** configuration in the FortiGate UI
-    * **Double-Click** the **routetableupdate-WebServers** Action
 
-        ![complexstitchtask4-2](../images/complex_stitch_task4-02.jpg)
+* **Double-Click** the **routetableupdate-WebServers** Action
 
-The configuration is very simple a single trigger is added and multiple actions can be attached to the trigger.
+    ![complexstitchtask4-2](../images/complex_stitch_task4-02.jpg)
+
+The configuration is very simple; a single trigger is added and multiple actions can be attached to the trigger.
