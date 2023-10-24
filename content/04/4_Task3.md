@@ -47,39 +47,39 @@ The triggers setup in the last task can all utilize the same action.
 
 > The webhook URI contains a question mark (?) between the words **webhooks** and **token**. When pasting text into the FortiGate CLI question marks are removed, due to the question mark having special meaning in the FortiGate CLI.
 
-    ```bash
-    config system automation-action
-        edit "routetableupdate"
-            set description "Update Route Table for MicroSegmentation"
-            set action-type webhook
-            set protocol https
-            set uri "YOUR_WEBHOOK"
-            set http-body "{\"action\":\"%%log.action%%\", \"addr\":\"%%log.addr%%\"}"
-            set port 443
-            config http-headers
-                edit 1
-                    set key "ResourceGroupName"
-                    set value "YOUR_RESOURCE_GROUP"
-                next
-                edit 2
-                    set key "RouteTableName"
-                    set value "rt-protected"
-                next
-                edit 3
-                    set key "RouteNamePrefix"
-                    set value "microseg"
-                next
-                edit 4
-                    set key "NextHopIp"
-                    set value "10.1.1.4"
-                next
-            end
-            set verify-host-cert disable
-        next
-    end
-    ```
+```bash
+config system automation-action
+    edit "routetableupdate"
+        set description "Update Route Table for MicroSegmentation"
+        set action-type webhook
+        set protocol https
+        set uri "YOUR_WEBHOOK"
+        set http-body "{\"action\":\"%%log.action%%\", \"addr\":\"%%log.addr%%\"}"
+        set port 443
+        config http-headers
+            edit 1
+                set key "ResourceGroupName"
+                set value "YOUR_RESOURCE_GROUP"
+            next
+            edit 2
+                set key "RouteTableName"
+                set value "rt-protected"
+            next
+            edit 3
+                set key "RouteNamePrefix"
+                set value "microseg"
+            next
+            edit 4
+                set key "NextHopIp"
+                set value "10.1.1.4"
+            next
+        end
+        set verify-host-cert disable
+    next
+end
+```
 
-    ![complexstitchtask3-1](../images/complex_stitch_task3-01.jpg)
+   ![complexstitchtask3-1](../images/complex_stitch_task3-01.jpg)
 
 1. View the configured Action in the FortiGate UI
 

@@ -75,4 +75,4 @@ The Azure SDN Connector is set to **disable** for now, it will be set to **enabl
     end
     ```
 
-For the time being all of the Dynamic Addresses will remain unresolved, becasue the Azure SDN Connector is currently set to *disable*. You will view the updated **WebServers** Address in Task 5 after the Azure SDN Connector is set to *enable*
+For the time being all of the Dynamic Addresses will remain unresolved, because the Azure SDN Connector is currently set to *disable*. You will view the updated **WebServers** Address in Task 5 after the Azure SDN Connector is set to *enable*

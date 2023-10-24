@@ -6,7 +6,7 @@ weight: 1
 
 ## FortiGate Automation Stitch Workshop
 
-In this workshop you will learn how to deploy Utilize FortiGate Automation Stitches on Azure in several different use cases
+In this workshop you will learn how to deploy and utilize FortiGate Automation Stitches on Azure in several different use cases
 
 ## FortiGate Automation Stitch TEC Workshop
 
