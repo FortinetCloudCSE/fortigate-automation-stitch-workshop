@@ -1,6 +1,6 @@
 variable "resource_group_name_suffix" {
   type    = string
-  default = "fgt-as-workshop"
+  default = "training"
 }
 
 variable "username" {
