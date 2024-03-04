@@ -8,7 +8,7 @@ weight: 1
 
 ### Tasks
 
-{{< notice warning >}} In an instructor led event, for example XPERTs 23 this step may not be required {{< /notice >}}
+{{< notice warning >}} In an instructor led event, for example XPERTs this step may not be required {{< /notice >}}
 
 * Provision Azure Environment
 * Setup Azure Cloud Shell
@@ -20,13 +20,15 @@ weight: 1
 ### Task 0 - Provision Azure Environment
 
 Provision Azure Environment, minimally enter your Email address and click _Provision_
-{{< launchdemoform >}}
+{{< launchdemoform labdefinition="azure-fgt-autostitch">}}
 
-{{< notice warning >}} After submitting, this page will return with a blank email address box and no other indications.
+{{% notice warning %}} After submitting, this page will return with a blank email address box and no other indications.
 
 Provisioning can take several minutes.
 
-***<b>PLEASE DO NOT SUBMIT MULTIPLE TIMES</b>***  {{< /notice >}}
+***PLEASE DO NOT SUBMIT MULTIPLE TIMES***  
+
+{{% /notice %}}
 
 When provisioning is complete, one of the following will happen.
 
