@@ -1,7 +1,7 @@
 <script>
   function formSubmit() {
 
-    var labdefinition = "fgtauto-lab";
+    var labdefinition = "{{ .Get `labdefinition` }}";
 
     var customer = document.getElementById("customer").value;
     var smartticket = document.getElementById("smartticket").value;
