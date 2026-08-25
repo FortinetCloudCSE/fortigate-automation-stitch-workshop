@@ -33,11 +33,13 @@ Provision Azure Environment, minimally enter your Email address and click ___Pro
 
 {{< launchdemoform labdefinition="azure-fgt-autostitch" >}}
 
-{{% notice warning %}} After submitting, this page will return with a blank email address box and no other indications.
+{{% notice style="secondary" icon="eye" title="What to Expect" %}}
 
-Provisioning can take several minutes.
+Enter your email and click ___Provision___ once. You'll see a live progress bar while your account is created — this typically takes a few minutes.
 
-___PLEASE DO NOT SUBMIT MULTIPLE TIMES___
+When it's done, your credentials (username and sign-in info) will appear directly on this page, and a copy is also sent to your email as a backup.
+
+If you reload this page or come back later, your credentials will still be here — no need to re-submit.
 
 {{% /notice %}}
 
