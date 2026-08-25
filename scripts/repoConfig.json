@@ -8,6 +8,7 @@
     "errorLevel": "warning",
     "googleServicesID": "G-5RZBH288ST",
     "marketingCode": "FortiHugo202",
+    "provisionApiBaseUrl": "https://func-cse-lab-provisioning.azurewebsites.net",
     "shortcuts": [
         {
             "text": "FortiOS 7.4 Admin Guide ",
